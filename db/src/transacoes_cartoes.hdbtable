@@ -1,0 +1,5 @@
+column table "demo::transacoes_cartoes"
+(
+ "id_transacao" BIGINT   ,
+ "nome" VARCHAR(30)   )
+
