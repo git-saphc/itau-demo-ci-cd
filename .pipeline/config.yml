@@ -31,7 +31,7 @@ steps:
     deployType: 'standard'
     cloudFoundry:
       org: 'CF-ORG-CSM-E2E-DEMOS'
-      space: 'QA'
+      space: 'CSM-E2E-DEMOS-SPACE'
       credentialsId: 'CF_CREDENTIALSID'
 #  mavenExecute:
 #    dockerImage: devxci/mbtci:1.0.14
