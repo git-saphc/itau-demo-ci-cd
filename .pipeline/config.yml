@@ -51,7 +51,7 @@
 
 # Project configuration
 general:
-  productiveBranch: 'main'
+  productiveBranch: 'dev'
 # Stage configuration
 stages:
   productionDeployment:
