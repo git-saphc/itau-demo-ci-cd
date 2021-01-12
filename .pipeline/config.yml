@@ -26,31 +26,31 @@ general:
 steps:
   mtaBuild:
     buildTarget: 'CF'
-  cloudFoundryDeploy:
-    deployTool: 'mtaDeployPlugin'
-    deployType: 'standard'
-    cloudFoundry:
-      apiEndpoint: 'https://api.cf.eu10.hana.ondemand.com'
-      org: 'CF-ORG-CSM-E2E-DEMOS'
-      space: 'CSM-E2E-DEMOS-SPACE'
-      credentialsId: 'cf-credentialsid'
+  # cloudFoundryDeploy:
+  #   deployTool: 'mtaDeployPlugin'
+  #   deployType: 'standard'
+  #   cloudFoundry:
+  #     apiEndpoint: 'https://api.cf.eu10.hana.ondemand.com'
+  #     org: 'CF-ORG-CSM-E2E-DEMOS'
+  #     space: 'CSM-E2E-DEMOS-SPACE'
+  #     credentialsId: 'cf-credentialsid'
 #  mavenExecute:
 #    dockerImage: devxci/mbtci:1.0.14
 
 
 ### Stage-specific configuration
-#stages:
+stages:
 
 #  integrationTests:
 #    credentials:
 #      - alias: 'mySystemAlias'
 #        credentialId: 'mySystemCredentialsId'
 
-#  productionDeployment:
-#    cfTargets:
-#      - org: 'myOrg'
-#        space: 'mySpace'
-#        apiEndpoint: 'https://'
-#        appName: 'myAppName'
-#        manifest: 'manifest.yml'
-#        credentialsId: 'myDeploymentCredentialsId'
+ productionDeployment:
+   cfTargets:
+     - org: 'CF-ORG-CSM-E2E-DEMOS'
+       space: 'CSM-E2E-DEMOS-SPACE'
+       apiEndpoint: 'https://api.cf.eu10.hana.ondemand.com'
+       appName: 'csm-demo-202002-cicd'
+       manifest: 'manifest.yml'
+       credentialsId: 'cf-credentialsid'
