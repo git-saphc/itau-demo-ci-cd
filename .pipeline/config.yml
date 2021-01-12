@@ -26,14 +26,14 @@ general:
 steps:
   mtaBuild:
     buildTarget: 'CF'
-  # cloudFoundryDeploy:
-  #   deployTool: 'mtaDeployPlugin'
-  #   deployType: 'standard'
-  #   cloudFoundry:
-  #     apiEndpoint: 'https://api.cf.eu10.hana.ondemand.com'
-  #     org: 'CF-ORG-CSM-E2E-DEMOS'
-  #     space: 'CSM-E2E-DEMOS-SPACE'
-  #     credentialsId: 'cf-credentialsid'
+  cloudFoundryDeploy:
+    deployTool: 'mtaDeployPlugin'
+    deployType: 'standard'
+    cloudFoundry:
+      apiEndpoint: 'https://api.cf.eu10.hana.ondemand.com'
+      org: 'CF-ORG-CSM-E2E-DEMOS'
+      space: 'CSM-E2E-DEMOS-SPACE'
+      credentialsId: 'cf-credentialsid'
 #  mavenExecute:
 #    dockerImage: devxci/mbtci:1.0.14
 
