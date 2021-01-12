@@ -30,6 +30,7 @@ steps:
     deployTool: 'mtaDeployPlugin'
     deployType: 'standard'
     cloudFoundry:
+      apiEndpoint: 'https://api.cf.eu10.hana.ondemand.com'
       org: 'CF-ORG-CSM-E2E-DEMOS'
       space: 'CSM-E2E-DEMOS-SPACE'
       credentialsId: 'cf-credentialsid'
