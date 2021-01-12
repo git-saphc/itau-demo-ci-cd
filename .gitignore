@@ -38,3 +38,5 @@ default-env.json
 gen/db/.env
 # auto generated wildcard
 gen/db/.env
+# auto generated wildcard
+csm_demo_202002_cicd/gen/db/.env
