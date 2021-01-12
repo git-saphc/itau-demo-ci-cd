@@ -26,7 +26,6 @@ general:
 steps:
   mtaBuild:
     buildTarget: 'CF'
-  productionDeployment: productionDeployment
   # cloudFoundryDeploy:
   #   deployTool: 'mtaDeployPlugin'
   #   deployType: 'standard'
