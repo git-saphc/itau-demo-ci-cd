@@ -32,7 +32,7 @@ steps:
     cloudFoundry:
       org: 'CF-ORG-CSM-E2E-DEMOS'
       space: 'CSM-E2E-DEMOS-SPACE'
-      credentialsId: 'CF_CREDENTIALSID'
+      credentialsId: 'cf-credentialsid'
 #  mavenExecute:
 #    dockerImage: devxci/mbtci:1.0.14
 
